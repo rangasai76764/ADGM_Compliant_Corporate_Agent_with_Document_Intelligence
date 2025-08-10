@@ -1,0 +1,51 @@
+{
+  "Company Incorporation": {
+    "required_documents": [
+      "Register of Members and Directors",
+      "Memorandum of Association",
+      "UBO Declaration",
+      "Articles of Association",
+      "Board Resolution"
+    ],
+    "rules": [
+      {
+        "id": "jurisdiction_clause",
+        "description": "Ensure jurisdiction clause specifies ADGM Courts",
+        "severity": "High"
+      },
+      {
+        "id": "signatory_block",
+        "description": "Check for presence of authorized signatory block",
+        "severity": "Medium"
+      }
+    ]
+  },
+  "Share Transfer": {
+    "required_documents": [
+      "Share Transfer Form",
+      "Board Resolution approving transfer",
+      "Updated Register of Members"
+    ],
+    "rules": [
+      {
+        "id": "consent_clause",
+        "description": "Check for consent of all existing shareholders",
+        "severity": "High"
+      }
+    ]
+  },
+  "Liquidation": {
+    "required_documents": [
+      "Board Resolution to liquidate",
+      "Liquidator Appointment Letter",
+      "Statement of Affairs"
+    ],
+    "rules": [
+      {
+        "id": "notifying_authorities",
+        "description": "Ensure notification to ADGM Registrar",
+        "severity": "High"
+      }
+    ]
+  }
+}
