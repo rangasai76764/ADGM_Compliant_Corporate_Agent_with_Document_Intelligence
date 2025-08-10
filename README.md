@@ -85,7 +85,7 @@ Setup Instructions
 
 1. Clone the Repository
 
-git clone <your-repo-link>.git
+git clone (https://github.com/rangasai76764/ADGM_Compliant_Corporate_Agent_with_Document_Intelligence.git)
 cd adgm_corporate_agent
 
 2. Open in VS Code
@@ -163,5 +163,6 @@ Example Output JSON
 Notes
 
 Place your input .docx files inside the data folder before running. [ Already i have give input .docx file ]
+
 
 The system automatically detects which process you’re following (e.g., Company Incorporation) and checks compliance.
