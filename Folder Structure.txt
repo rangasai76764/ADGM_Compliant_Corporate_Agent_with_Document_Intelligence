@@ -1,0 +1,50 @@
+adgm_corporate_agent/
+│
+├── app.py                          # Main Gradio/Streamlit app entry point
+├── requirements.txt                # Dependencies list
+├── README.md                       # Setup & usage instructions
+├── Folder_Structure.txt            # Documentation of folder layout
+├── Output_Image.png                 # Screenshot or diagram of output
+│
+├── config/
+│   ├── checklist.json               # ADGM required documents & rules
+│   └── clause_suggestions.json      # Clause improvement suggestions
+│
+├── reference_docs/
+│   ├── Document_Upload_Categories.pdf  # Provided reference doc
+│   └── other_reference_links.txt       # ADGM law links
+│
+├── data/
+│   ├── example_input.docx           # Example document BEFORE review
+│   ├── example_output.docx          # Example document AFTER review
+│   ├── example_output.json          # Structured JSON summary
+│   ├── Memorandum_of_Association.docx
+│   ├── Articles_of_Association.docx
+│   ├── Register_of_Members_and_Directors.docx
+│   ├── UBO_Declaration.docx
+│   └── Board_Resolution.docx
+│
+├── rag/
+│   ├── __init__.py
+│   ├── vectorstore.py               # FAISS/Chroma setup for RAG
+│   └── retriever.py                 # RAG retrieval functions
+│
+├── processors/
+│   ├── __init__.py
+│   ├── doc_parser.py                # Reads & extracts .docx content
+│   ├── compliance_checker.py        # Checks document completeness
+│   ├── redflag_detector.py          # Detects legal issues
+│   ├── comment_inserter.py          # Adds inline comments to .docx
+│   └── clause_suggester.py          # Suggests legal clause improvements
+│
+├── utils/
+│   ├── __init__.py
+│   ├── file_utils.py                # File handling helpers
+│   └── json_reporter.py             # Generates JSON summary
+│
+└── tests/
+    ├── test_doc_parser.py
+    ├── test_checker.py
+    ├── test_full_pipeline.py
+    ├── test_rag_retriever.py
+    └── test_clause_suggester.py
